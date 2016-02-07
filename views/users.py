@@ -263,28 +263,32 @@ def subscribe(login, rec):
 def unsubscribe(login, rec):
     """Unsubscribe from user
     """
-    if rec:
-        fn = users.unsubscribe_rec
-    else:
-        fn = users.unsubscribe
     try:
+        if login == env.user.login:
+            raise SubscribeError
+        if rec:
+            if users.check_subscribe_to_user_rec(login):
+                fn = users.unsubscribe_rec
+            else:
+                return xmpp_template('sub_rec_not', login=login)
+        else:
+            if users.check_subscribe_to_user(login):
+                fn = users.unsubscribe
+            else:
+                return xmpp_template('sub_not', login=login) 
+
         if not fn(login):
             if rec:
-                return xmpp_template('sub_rec_not', login=login)
+                return xmpp_template('sub_unsub_rec_ok', login=login)
             else:
-                return xmpp_template('sub_not', login=login)
+                return xmpp_template('sub_unsub_ok', login=login)
     except UserNotFound:
         return xmpp_template('user_not_found', login=login)
     except SubscribeError:
         if rec:
-            return xmpp_template('sub_rec_not', login=login)
+            return xmpp_template('sub_unsub_rec_error', login=login)
         else:
-            return xmpp_template('sub_not', login=login)
-
-    if rec:
-        return xmpp_template('sub_unsub_rec_ok', login=login)
-    else:
-        return xmpp_template('sub_unsub_ok', login=login)
+            return xmpp_template('sub_unsub_error', login=login)
 
 @check_auth
 def whitelist():

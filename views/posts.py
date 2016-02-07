@@ -291,13 +291,19 @@ def subscribe(post_id):
     return xmpp_template('post_sub_ok', post_id=post_id, comments=cnt)
 
 def unsubscribe(post_id):
+    """Unsubscribe from certain post. 
+    If user is not subscribed to this post, return "You are not subscribed 
+    to #post_id", else return "You've sucessfully unsubscribed..."
+    """
     try:
-        posts.unsubscribe(post_id)
+        if posts.check_subscribe_to(post_id):
+            posts.unsubscribe(post_id)
+            return xmpp_template('post_unsub_ok', post_id=post_id)
     except PostNotFound:
         return xmpp_template('post_not_found', post_id=post_id)
     except PostAuthorError:
         return xmpp_template('post_denied', post_id=post_id)
-    return xmpp_template('post_unsub_ok', post_id=post_id)
+    return xmpp_template('post_not_subscribed', post_id=post_id)
 
 def recommend(post_id, comment_id=None, text=None):
     try:
