@@ -1,7 +1,8 @@
 from point.core.user import User, UserNotFound, SubscribeError, \
                             AlreadySubscribed
-from point.core.post import Post, PostAuthorError, PostNotFound, \
-                            PostTextError, PostUpdateError, PostCommentedError
+from point.core.post import Post, PostNotFound, PostTextError, \
+                            PostCommentedError, \
+                            PostAlreadyPinnedError, PostNotPinnedError
 from point.core.post import CommentNotFound, CommentAuthorError
 from point.core.post import RecommendationError, RecommendationNotFound, \
                             RecommendationExists, PostAuthorError, \
@@ -12,12 +13,6 @@ from point.app import posts
 from point.util import parse_tags, parse_logins
 from geweb.env import env
 from point.util.template import xmpp_template
-
-
-try:
-    import re2 as re
-except ImportError:
-    import re
 
 def recent(show=None, offset=None, limit=None):
     if offset:
@@ -66,7 +61,7 @@ def all_posts(show=None, offset=None, limit=None):
     else:
         limit = 10
 
-    plist = posts.select_posts(offset=offset, limit=limit, private=False)
+    plist = posts.select_posts(offset=offset, limit=limit, private=False, blacklist=True)
     plist.reverse()
 
     return xmpp_template('posts', posts=plist)
