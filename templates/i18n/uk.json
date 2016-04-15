@@ -12,219 +12,226 @@
   "Wrong confirmation code": "Невірний код підтвердження",
 
   // text/account_del.tmpl
-  "The address was successfully removed": "Адресу видалено",
+  "The address was successfully removed": "Адресу успішно видалено",
 
   // text/accounts.tmpl
-  "Your IM accounts": "Ваші мессенджеры",
-  "Your e-mails": "Ваши e-mail",
-  "Your %s accounts": "Ваші %s-акаунти",
+  "Your IM accounts": "Ваші IM-акаунти",
+  "Your e-mails": "Ваші e-mail",
+  "Your %s accounts": "Ваші %s акаунти",
   "Delete": "Видалити",
   "active": "активний",
   "no accounts added yet": "жодного ще не додано",
   "Unconfirmed": "Непідтверджені",
 
   // text/alias_del_fail.tmpl
+  "You cannot delete alias": "Ви не можете видалити аліас",
 
   // text/alias_del.tmpl
-  "Alias \"%s\" sucessfully deleted": "Алиас %s удалён",
+  "Alias \"%s\" sucessfully deleted": "Аліас \"%s\" видалено",
 
   // text/alias_list.tmpl
-  "User aliases": "Пользовательские алиасы",
-  "Global aliases": "Глобальные алиасы",
+  "User aliases": "Аліаси користувача",
+  "Global aliases": "Глобальні аліаси",
 
   // text/alias_set.tmpl
-  "Alias \"%s\" is set to \"%s\"": "Алиасу \"%s\" присвоено значение \"%s\"",
+  "Alias \"%s\" is set to \"%s\"": "Аліасу \"%s\" присвоєно значення \"%s\"",
 
   // text/blacklist.tmpl
-  "Your blacklist": "Ваш чёрный список",
+  "Your blacklist": "Ваш чорний список",
   "Tags": "Теги",
-  "Your blacklist is empty": "Ваш чёрный список пуст",
+  "Your blacklist is empty": "Ваш чорный список порожній",
 
   // text/blacklist_updated.tmpl
-  "Blacklist is updated": "Чёрный список обновлён",
+  "Blacklist is updated": "Чорний список оновлено",
 
   // text/bl_updated.tmpl
-  "Blacklist has been updated": "Чёрный список обновлён",
-  "Added": "Добавлено",
-  "Already in list": "Уже в списке",
-  "Cannot add": "Невозможно добавить",
-  "Deleted": "Удалено",
-  "Not in list": "Не в списке",
-  "Not found": "Не найдено",
+  "Blacklist has been updated": "Чорний список оновлено",
+  "Added": "Додані",
+  "Already in list": "Вже у списку",
+  "Cannot add": "Не можете додати",
+  "Deleted": "Видалені",
+  "Not in list": "Не у списку",
+  "Not found": "Не знайдені",
 
   // text/bookmark_cancel_sent.tmpl
-  "is removed from your bookmarks": "удалён из закладок",
+  "is removed from your bookmarks": "видалений із вашіх закладок",
 
   // text/bookmark_sent.tmpl
-  "is added to your bookmarks": "добавлен в закладки",
+  "is added to your bookmarks": "додано в закладки",
 
   // text/comment_del_denied.tmpl
-  "You cannot delete %s": "Вы не можете удалить %s",
+  "You cannot delete %s": "Ви не можете видалити коментар %s",
 
   // text/comment_del.tmpl
-  "Comment #%s/%s is deleted": "Комментарий %s удалён",
+  "Comment #%s/%s is deleted": "Коментар #%s/%s видалено",
 
   // text/comment_not_found.tmpl
-  "Comment #%s/%s does not exist": "Комментарий %s не найден",
+  "Comment #%s/%s does not exist": "Коментар #%s/%s не існує",
 
   // text/comment.tmpl
-  "in response to": "в ответ на",
+  "in response to": "у відповідь на",
 
   // text/confirm_code.tmpl
 
+
   // text/im_offline.tmpl
-  "Message delivery is now disabled": "Доставка сообщений отключена",
+  "Message delivery is now disabled": "Доставку поідомлень вимкнено",
 
   // text/im_online.tmpl
-  "Message delivery is now enabled": "Доставка сообщений включена",
+  "Message delivery is now enabled": "Доставку повідомлень увімкнено",
 
   // text/msg_comment_edited.tmpl
-  "%s has edited %s": "%s изменил %s",
+  "%s has edited %s": "%s змінив %s",
 
   // text/msg_comment_sent.tmpl
-  "Comment %s is added.": "Комментарий %s добавлен",
+  "Comment %s is added.": "Коментар %s додано",
+
+  // text/msg_comment.tmpl
+
+  // text/msg_post_edited.tmpl
+  "%s has edited %s": "%s змінив %s",
 
   // text/msg_post_sent.tmpl
-  "Post %s is sent": "Пост %s отправлен",
-  "Private post %s is sent": "Приватный пост %s отправлен",
+  "Private post %s is sent": "Приватний пост %s надіслано",
 
   // text/msg_post.tmpl
-  "Private post from": "Приватный пост от",
+  "Private post from": "Приватний пост від",
 
   // text/msg_post_upd.tmpl
+  "%s has updated %s": "%s оновив %s",
 
   // text/msg_rec.tmpl
-  "%s recommends:": "%s рекомендует:",
-  "Comments: %d": "Комментариев: %s",
+  "%s recommends:": "%s рекомендує:",
+  "Comments: %d": "Коментарів: %d",
 
   // text/nothing_to_del.tmpl
-  "Nothing to delete": "Нечего удалять",
+  "Nothing to delete": "Немає що видаляти",
 
   // text/nothing_to_edit.tmpl
-  "Nothing to edit": "Нечего редактировать",
+  "Nothing to edit": "Немає що редагувати",
 
   // text/passwd_changed.tmpl
-  "Your password is successfully changed": "Пароль успешно изменён",
+  "Your password is successfully changed": "Пароль успішно змінено",
 
   // text/passwd_enter_current.tmpl
-  "Enter your current password": "ВВедите текущий пароль",
+  "Enter your current password": "Введіть Ваш поточний пароль:",
 
   // text/passwd_enter_new.tmpl
-  "Enter your new password": "Введите новый пароль",
+  "Enter your new password": "Введіть *новий* пароль:",
 
   // text/passwd_wrong.tmpl
-  "Sorry, wrong current password": "Извините, неверный текущий пароль",
+  "Sorry, wrong current password": "Вибачте, невірний поточний пароль",
 
   // text/password.tmpl
-  "Encrypted password cannot be displayed": "Пароль зашифрован и не может быть отображён",
+  "Encrypted password cannot be displayed": "Пароль зашифровано та не може бути відображено",
 
   // text/post_already_pinned.tmpl
-  "Post %s is already pinned": "Пост %s уже закреплён",
+  "Post %s is already pinned": "Пост %s вже закріплено",
 
   // text/post_bookmark_denied.tmpl
-  "You cannot add %s to bookmarks.": "Вы не можете добавить %s в закладки",
+  "You cannot add %s to bookmarks.": "Ви не можете додати %s до закладок",
 
   // text/post_commented_err.tmpl
-  "Post %s is already commented.": "У поста %s уже есть комментарии",
+  "Post %s is already commented.": "У поста %s вже є коментарі",
 
   // text/post_del_denied.tmpl
-  "You cannot delete %s.": "Вы не можете удалить %s",
+  "You cannot delete %s.": "Ви не можете видалити пост %s",
 
   // text/post_del.tmpl
-  "Post #%s is deleted": "Пост %s удалён",
+  "Post #%s is deleted": "Пост #%s видалений",
 
   // text/post_denied.tmpl
-  "Access to %s is denied.": "Доступ к %s закрыт",
+  "Access to #%s is denied.": "Доступ до #%s заборонено",
 
   // text/post_diff_err.tmpl
-  "Too many differencies in %s": "Слишком много изменений в %s",
+  "Too many differencies in %s.": "Занадто багато змін у %s",
 
   // text/post_inadmissible.tmpl
-  "Inadmissible post": "Недопустимый пост",
+  "Inadmissible post": "Неприпустимий пост",
 
   // text/post_interval_exceeded.tmpl
-  "Too short period of time between actions": "Слишком короткий промежуток времени между действиями",
+  "Too short period of time between actions": "Занадто короткий проміжок часу між діями",
 
   // text/post_not_found.tmpl
-  "Post %s does not exist": "Пост %s не найден",
+  "Post %s does not exist": "Пост %s не знайдений",
 
   // text/post_not_pinned.tmpl
-  "Post %s is not pinned": "Пост %s не закреплён",
+  "Post %s is not pinned": "Пост %s не закріплено",
 
   // text/post_not_subscribed.tmpl
-  "You were not subscribed to %s.": "Вы не были подписаны на %s",
+  "You were not subscribed to %s.": "Ви не були підписані на %s",
 
   // text/post_pinned.tmpl
-  "Post %s is pinned": "Пост %s закреплён",
+  "Post %s is pinned": "Пост %s закріплено",
 
   // text/post_readonly.tmpl
-  "Post %s is readonly.": "Пост %s только для чтения",
+  "Post %s is readonly.": "Пост %s тільки для читання",
 
   // text/post_recommend_denied.tmpl
-  "You cannot recommend %s.": "Вы не можете рекомендовать %s",
+  "You cannot recommend %s.": "Ви не можете рекомендувати %s",
 
   // text/posts.tmpl
-  "Posts: %d": "Постов: %d",
-  "No posts yet": "Пока нет постов",
+  "Posts: %d": "Постів: %d",
+  "No posts yet": "Поки що постів немає",
 
   // text/post_sub_already.tmpl
-  "You are already subscribed to %s.": "Вы уже подписаны на %s",
+  "You are already subscribed to %s.": "Ви вже підписані на %s",
 
   // text/post_sub_ok.tmpl
-  "You are subscribed to %s.": "Вы подписаны на %s",
+  "You are subscribed to %s.": "Ви підписалися на %s",
 
   // text/post.tmpl
-  "Recommended by": "Рекомендовано",
-  "and": "и",
-  "No comments yet": "Пока нет комментариев",
+  "Recommended by %s": "Рекомендовано %s",
+  "and %s": "та %s",
+  "No comments yet": "Немає коментарів",
 
   // text/post_unpinned.tmpl
-  "Post %s has been unpinned": "Пост %s откреплён",
+  "Post %s has been unpinned": "Закріплення знято з %s",
 
   // text/post_unsub_ok.tmpl
-  "You have sucessfully unsubscribed from %s.": "Вы отписались от %s",
+  "You have sucessfully unsubscribed from %s.": "Ви успішно відписалися від %s",
 
   // text/post_upd_err.tmpl
-  "Cannot update %s.": "Невозможно обновить %s",
+  "Cannot update %s.": "Неможливо оновити %s",
 
   // text/post_upd.tmpl
-  "Post %s is updated.": "Пост %s обновлён",
+  "Post %s is updated.": "Пост %s оновлено",
 
   // text/profile_ok.tmpl
-  "Profile updated successfully": "Профиль обновлён",
+  "Profile updated successfully": "Профіль успішно оновлено",
 
   // text/profile_param_err.tmpl
-  "Unknown parameter: %s": "Неизвестный параметр: %s",
+  "Unknown parameter: %s": "Невідомий параметр: %s",
 
   // text/profile_value_err.tmpl
-  "Incorrect value: %s": "Недопустимое значение: %s",
+  "Incorrect value: %s": "Недопустиме значення: %s",
 
   // text/rcpt_add_already.tmpl
-  "These users are already invited into %s": "Эти пользователи уже приглашены в %s",
+  "These users are already invited into %s.": "Ці користувачі вже запрошені у %s",
 
   // text/rcpt_add.tmpl
-  "are invited into %s": "приглашены в %s",
-  "is invited into %s": "приглашён в %s",
+  "are invited into %s": "запрошені у %s",
+  "is invited into %s": "запрошений у %s",
 
   // text/rcpt_del.tmpl
-  "are removed from %s": "удалены из %s",
-  "is removed from %s": "удалён из %s",
+  "are removed from %s": "видалені із %s",
+  "is removed from %s": "видалений із %s",
 
   // text/rec_ok.tmpl
-  "%s recommended your comment %s": "%s порекомендовал ваш комментарий %s",
-  "%s recommended your post %s": "%s порекомендовал ваш  пост %s",
+  "%s recommended your comment %s": "рекомендував Ваш коментар %s",
+  "%s recommended your post %s": "рекомендував Ваш пост %s",
 
   // text/recommendation_cancel_sent.tmpl
-  "Recommendation cancelled": "Рекомендация отменена",
+  "Recommendation cancelled": "Рекомендацію відмінено",
 
   // text/recommendation_sent.tmpl
   "Recommended": "Рекомендовано",
 
   // text/reg_already.tmpl
-  "You are already authorized as %s": "Вы уже авторизованы как %s",
+  "You are already authorized as %s": "Ви вже авторизовані як %s",
 
   // text/reg_invalid.tmpl
-  "Nickname may contain letters, numbers and minus sign (\"-\") and must be between 2 and 32 chararacters.": "Никнейм может содержать латинские буквы, цифры и минус (\"-\"), и его длина должна быть не меньше 2 и не больше 16 знаков.",
+  "Nickname may contain letters, numbers and minus sign (\"-\") and must be between 2 and 32 chararacters.": "Нікнейм може містити латинські літери, цифри та минус (\"-\"). Довжина нікнейму повинна бути не менше ніж 2 і не більше ніж 16 знаків",
 
   // text/reg_ok.tmpl
 
@@ -235,99 +242,100 @@
   // text/search.tmpl
 
   // text/sub_already.tmpl
-  "You are already subscribed to %s": "Вы уже подписаны на %s",
+  "You are already subscribed to %s": "Ви вже підписані на %s",
 
   // text/sub_denied.tmpl
-  "You cannot subscribe to %s": "Вы не можете подписаться на %s",
+  "You cannot subscribe to %s": "Ви не можете підписатися на %s",
 
   // text/sub_not.tmpl
-  "You were not subscribed to %s": "Вы не были подписаны на %s",
+  "You were not subscribed to %s": "Ви не були підписані на %s",
 
   // text/sub_ok.tmpl
-  "Successfully subscribed to %s": "Вы успешно подписались на %s",
+  "Successfully subscribed to %s": "Ви підписалися на %s",
 
   // text/sub_rec_already.tmpl
-  "You are already subscribed to %s's recommendations": "Вы уже подписаны на рекомендации %s",
+  "You are already subscribed to %s's recommendations": "Ви вже підписалися на рекомендації %s",
 
   // text/sub_rec_not.tmpl
-  "You were not subscribed to %s's recommendations": "Вы не были подписаны на рекомендации %s",
+  "You were not subscribed to %s's recommendations": "Ви не були підписані на рекомендації %s",
 
   // text/sub_rec_ok.tmpl
-  "Successfully subscribed to %s's recommendations": "Вы успешно подписались на рекомендации %s",
+  "Successfully subscribed to %s's recommendations": "Ви підписалися на рекомендації %s",
 
   // text/sub_rename.tmpl
 
   // text/sub_req_already.tmpl
-  "Subscription request was already sent to %s": "Вы уже отправляли %s запрос на подписку",
+  "Subscription request was already sent to %s": "Ви вже відправляли %s запит про підписку",
 
   // text/sub_req_sent.tmpl
-  "Subscription request is sent to %s": "Запрос на подписку отправлен %s",
+  "Subscription request is sent to %s": "Запти про підписку надіслано %s",
 
   // text/sub_req.tmpl
-  "%s has requested a subscription to your blog": "%s запросил подписку на Ваш блог",
+  "%s has requested a subscription to your blog": "%s надсилає запит про підписку на Ваш блог",
 
   // text/subscriptions.tmpl
-  "You are subscribed to:": "Вы подписаны на:",
-  "Your readers:": "На вас подписаны:",
-  "Incoming subscription requests:": "Запросы на подписку:",
-  "Outgoing subscription requests:": "Запросы на подписку от вас:",
+  "You are subscribed to:": "Ви підписані на:",
+  "Your readers:": "На вас підписані:",
+  "Incoming subscription requests:": "Запити про підписку:",
+  "Outgoing subscription requests:": "Запити про підписку від вас:",
   "Tags:": "Теги:",
-  "You are not subscribed to anyone yet.": "Вы ещё ни на кого не подписаны",
+  "You are not subscribed to anyone yet.": "Ви ще ні на кого не підписані",
 
   // text/sub_sub.tmpl
-  "%s has subscribed to your blog": "%s подписался на Ваш блог",
+  "%s has subscribed to your blog": "%s підписався на Ваш блог",
 
   // text/sub_unsub_error.tmpl
-  "It's impossible to unsubscribe from yourself, %s": "Невозможно отписаться от себя самого, %s",
+  "It's impossible to unsubscribe from yourself, %s": "Неможливо відписатися від самого себе, %s",
 
   // text/sub_unsub_ok.tmpl
-  "Successfully unsubscribed from %s": "Вы отписались от %s",
+  "Successfully unsubscribed from %s": "Ви відписалися від %s",
 
   // text/sub_unsub_rec_error.tmpl
-  "You cannot perform this action for your blog, %s": "Вы не можете выполнить это действие для своего блога, %s",
+  "You cannot perform this action for your blog, %s": "Ви не можете виконати цю дію із власним блогом, %s",
 
   // text/sub_unsub_rec_ok.tmpl
-  "You have successfully unsubscribed from %s's recommendations": "Вы успешно отписались от рекомендаций %s",
+  "You have successfully unsubscribed from %s's recommendations": "Ви успішно відписалися від рекомендацій %s",
 
   // text/sub_wl.tmpl
-  "%s has added you to his white list": "%s добавил Вас в белый список",
+  "%s has added you to his white list": "%s додав Вас до білого списку",
 
   // text/tags_sub_ok.tmpl
-  "You are subscribed to %s's tags": "Вы подписались на теги %s",
-  "You are subscribed to tags": "Вы подписались на теги",
+  "You are subscribed to %s's tags": "",
+  "You are subscribed to tags": "",
 
   // text/tags_unsub_ok.tmpl
-  "You are unsubscribed from %s's tags": "Вы отписались от тегов %s",
-  "You are unsubscribed from tags": "Вы отписались от тегов",
+  "You are unsubscribed from %s's tags": "Ви відписалися від тегів %s",
+  "You are unsubscribed from tags:": "Ви відписалися від тегів:",
 
   // text/user_denied.tmpl
-  "You cannot view @%s's info": "Вы не можете посмотреть профиль %s",
+  "You cannot view @%s's info": "Ви не можете переглянути профіль @%s",
 
   // text/user_info.tmpl
 
   // text/user_not_authorized.tmpl
-  "You are not authorized": "Вы не авторизованы",
+  "You are not authorized": "Ви не авторизовані",
 
   // text/user_not_found.tmpl
-  "User %s does not exist": "Пользователь %s не найден",
+  "User %s does not exist": "Користувача %s не знайдено",
 
   // text/user_post_denied.tmpl
-  "You cannot write to %s": "Вы не можете писать %s",
+  "You cannot write to %s": "Ви не можете писати %s",
 
   // text/whitelist.tmpl
-  "Your white list": "Ваш белый список",
-  "Your white list is empty": "Ваш белый список пуст",
+  "Your white list:": "Ваш білий список:",
+  "Your white list is empty": "Ваш білий список порожній",
 
   // text/wl_updated.tmpl
-  "Whitelist has been updated": "Белый список обновлён",
+  "Whitelist has been updated": "Білий список оновлено",
 
   // xhtml/_comment_menu.tmpl
-  "Unsubscribe": "Отписаться",
-  "Recommend": "Рекомендовать",
-  "Add to bookmarks": "Добавить в закладки",
-  "Last 10 comments": "Последние 10 комментариев",
-  "All comments": "Все комментарии",
+  "Unsubscribe": "Відписатися",
+  "Recommend": "Рекомендувати",
+  "Add to bookmarks": "До закладок",
+  "Last 10 comments": "Останні 10 коментарів",
+  "All comments": "Усі коментарі",
 
   // xhtml/_post_menu.tmpl
-  "Subscribe": "Подписаться"
+  "Subscribe": "Підписатися",
+  "Bookmark": "Закладки"
 }
