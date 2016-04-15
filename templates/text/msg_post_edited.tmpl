@@ -1,0 +1,10 @@
+{% set _author = '@%s'|format(author) %}
+{% set _post = '#%s'|format(post_id) %}
+{{_('%s has edited %s')|format(_author, _post) }}:
+{% if tags %}{% for t in tags %} *{{ t }}{% endfor %}
+{% endif %}
+{{text|safe}}
+{% if link %}{{link}}
+{% endif %}
+{% if files %}{% for f in files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}

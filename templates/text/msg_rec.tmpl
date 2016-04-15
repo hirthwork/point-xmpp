@@ -1,0 +1,13 @@
+{% set _user = '@%s'|format(author) %}
+{{ _('%s recommends:')|format(_user) }} {{text or ''}}
+@{{post_author}}
+{% for t in tags %} *{{ t }}{% endfor %}
+{% if title %}{% if author_name %}{{author_name}}
+{% endif %}**{{title}}**{% endif %}
+{{post_text|safe}}
+{% if link %}{{link}}
+{% endif %}
+{% if files %}{% for f in files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}
+{% if comments %}{{ _('Comments: %d')|format(comments|count) }}{% endif %}
+#{{post_id}}{% if comment_id %}/{{comment_id}}{% endif %} https://{{settings.domain}}/{{post_id}}{% if comment_id %}#{{comment_id}}{% endif %}

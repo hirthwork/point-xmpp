@@ -43,6 +43,9 @@ media_root = '://i.point.im/m'
 lang = 'en'
 timezone = 'Europe/Moscow'
 
+i18n_dir = 'templates/i18n'
+i18n_langs = ['en', 'ru', 'uk', 'by']
+
 session_expire = 1800
 
 # Web sessions

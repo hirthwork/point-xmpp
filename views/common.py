@@ -7,7 +7,7 @@ import os.path
 from contextlib import closing
 from point.util.env import env
 
-DEF_HELP = 'Help is temporarily available here: http://point.im/help/commands.'
+DEF_HELP = 'Help is temporarily available here: http://%s/help/commands.' % settings.domain
 
 def show_help():
     if env.user and env.user.id:
@@ -15,8 +15,7 @@ def show_help():
     else:
         _lang = settings.lang
 
-    template_path = settings.template_path
-    help_file = os.path.join(template_path, _lang, "help.txt")
+    help_file = os.path.join(settings.i18n_dir, 'help-%s.txt' % _lang)
     help_msg = ""
     if not os.path.exists(help_file):
         return DEF_HELP
@@ -24,7 +23,7 @@ def show_help():
         with closing(open(help_file)) as f:
             help_msg = f.read()
             return help_msg
-    except Exception as e:
+    except Exception:
         return DEF_HELP
 
 def ping():

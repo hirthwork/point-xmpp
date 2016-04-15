@@ -1,0 +1,2 @@
+{% set _post = '#%s'|format(post_id) %}
+{% for u in to_users %}@{{ u }} {% endfor %} {% if to_users|count > 1 %}{{ _('are invited into %s')|format(_post) }}{% else %}{{ _('is invited into %s')|format(_post) }}{% endif %}.

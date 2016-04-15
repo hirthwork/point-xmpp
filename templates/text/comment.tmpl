@@ -1,0 +1,7 @@
+@{{author}}
+{{text|safe}}
+{% if files %}
+{% for f in files %}http{{settings.media_root}}/{{f}}">{{f|basename}}{% endfor %}
+{% endif %}
+#{{post_id}}/{{comment_id}} https://{{settings.domain}}/{{post_id}}#{{comment_id}}
+{% if to_comment_id %}{{ _('in response to') }} /{{to_comment_id}}{% endif %}

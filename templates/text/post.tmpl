@@ -1,0 +1,24 @@
+@{{author}}
+{% if tags %}{% for t in tags %} *{{ t }}{% endfor %}
+{% endif %}
+{% if title %}{% if author_name %}{{author_name}}
+{% endif %}**{{title}}**{% endif %}
+{{text|safe}}
+{% for upd in updates %}UPD {{upd.no}}: {{upd.text}}
+{% endfor %}
+{% if link %}{{link}}{% endif %}
+{% if files %}{% for f in files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}
+https://{{settings.domain}}/{{post_id}}
+{% if rec_users %}{{ _('Recommended by') }} {% for u in rec_users %}@{{u.login}}{% if loop.index==rec_users|count %}{% elif loop.index==rec_users|count-1 %} {{ _('and') }} {% else %}, {% endif %}{% endfor %}
+{% endif %}
+{% for c in comments %}
+{{c.comment_id}}. @{{c.comment_author}}
+{% if c.comment_to %}@{{c.comment_to}}, {% endif %}{{c.comment_text|safe}}
+{% if c.files %}{% for f in c.files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}
+{% if c.is_rec %}[!] {% endif %}#{{post_id}}/{{c.comment_id}} https://{{settings.domain}}/{{post_id}}#{{c.comment_id}}
+{% if c.to_comment_id %}{{ _('in response to') }} /{{c.to_comment_id}}{% endif %}
+{% else %}
+{% if comments_count %}{{ _('Comments: %d')|format(comments_count) }}{% else %}{{ _('No comments yet') }}{% endif %}.
+{% endfor %}

@@ -1,0 +1,2 @@
+{% set _post = '<a href="xmpp:%(jid)s?message;type=chat;body=%%23%(post_id)s%%20" style="color:#448844; font-weight:bold; text-decoration:none;">#%(post_id)s</a>'|format(jid=settings.xmpp_jid, post_id=post_id) %}
+{{ _('Too many differencies in %s')|format(_post)|safe }}.

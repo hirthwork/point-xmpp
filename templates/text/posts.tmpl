@@ -1,0 +1,13 @@
+{% for p in posts %}
+{% if p.post.private %}[private]{% endif %} 
+{% if p.rec and p.rec.text %}@{{p.rec.author.login}}: {{p.rec.text}}{% endif %}
+@{{p.post.author.login}}:
+{% for t in p.post.tags %} *{{ t }}{% endfor %}
+{% if p.title %}**{{p.title}}**
+{% endif %}
+{{p.post.text|safe}}
+{{ _('Comments: %d')|format(p.post.comments_count()) }}
+#{{p.post.id}} https://{{settings.domain}}/{{p.post.id}}
+
+{% else %}{% if posts_count %}{{ _('Posts: %d')|format(posts_count) }}{% else %}{{ _('No posts yet') }}.{% endif %}
+{% endfor %}

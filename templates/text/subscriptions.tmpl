@@ -1,0 +1,23 @@
+{% if subscriptions %}
+{{ _('You are subscribed to:') }}
+{% for u in subscriptions %}@{{u.login}}{% if loop.last %}.{% else %}, {% endif %}{% endfor %}
+{% endif %}
+{% if subscribers %}
+{{ _('Your readers:') }}
+{% for u in subscribers %}@{{u.login}}{% if loop.last %}.{% else %}, {% endif %}{% endfor %}
+{% endif %}
+{% if in_req %}
+{{ _('Incoming subscription requests:') }}
+{% for u in in_req %}@{{u.login}}{% if loop.last %}.{% else %}, {% endif %}{% endfor %}
+{% endif %}
+{% if out_req %}
+_('Outgoing subscription requests:') }}
+{% for u in out_req %}@{{u.login}}{% if loop.last %}.{% else %}, {% endif %}{% endfor %}
+{% endif %}
+{% if tags %}
+{{ _('Tags:') }}
+{% for tt in tags %}
+{% for t in tt.tags %}*{{t}}{% if not loop.last %}, {% endif %}{% endfor %}
+{% if tt.login %} of @{{tt.login}}{% endif %}{% if loop.last %}.{% else %};{% endif %}
+{% endfor %}
+{% endif %}{% if not subscriptions and not subscribers and not in_req and not out_req and not tags %}{{ _('You are not subscribed to anyone yet.') }}{% endif %}

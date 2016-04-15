@@ -1,0 +1,2 @@
+{% set _user = '<a href="xmpp:%(jid)s?message;type=chat;body=@%(login)s%%20" style="color:#4488ff; font-weight:bold; text-decoration:none;">@%(login)s</a>'|format(jid=settings.xmpp_jid, login=login) %}
+{{ _('You have successfully unsubscribed from %s\'s recommendations')|format(_user)|safe }}

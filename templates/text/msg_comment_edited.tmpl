@@ -1,0 +1,4 @@
+{% set _user = '@%s'|format(author) %}
+{% set _comment = '#{{post_id}}/{{comment_id}}'|format(post_id=post_id, comment_id=comment_id) %}
+{{ _('%s has edited %s')|format(_user, _comment) }}:
+{{text|xhtmlim|safe}}

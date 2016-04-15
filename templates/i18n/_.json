@@ -1,0 +1,338 @@
+{
+  // text/account_add_fail.tmpl
+  "This address is already in use": "",
+
+  // text/account_add.tmpl
+  "Confirmation info has been sent to the specified address": "",
+
+  // text/account_confirmed.tmpl
+  "The address is successfully confirmed": "",
+
+  // text/account_confirm_fail.tmpl
+  "Wrong confirmation code": "",
+
+  // text/account_del.tmpl
+  "The address was successfully removed": "",
+
+  // text/accounts.tmpl
+  "Your IM accounts": "",
+  "Your e-mails": "",
+  "Your %s accounts": "",
+  "Delete": "",
+  "active": "",
+  "no accounts added yet": "",
+  "Unconfirmed": "",
+
+  // text/alias_del_fail.tmpl
+
+  // text/alias_del.tmpl
+  "Alias "%s" sucessfully deleted": "",
+
+  // text/alias_list.tmpl
+  "User aliases": "",
+  "Global aliases": "",
+
+  // text/alias_set.tmpl
+  "Alias "%s" is set to "%s"": "",
+
+  // text/blacklist.tmpl
+  "Your blacklist": "",
+  "Tags": "",
+  "Your blacklist is empty": "",
+
+  // text/blacklist_updated.tmpl
+  "Blacklist is updated": "",
+
+  // text/bl_updated.tmpl
+  "Blacklist has been updated": "",
+  "Added": "",
+  "Already in list": "",
+  "Cannot add": "",
+  "Deleted": "",
+  "Not in list": "",
+  "Not found": "",
+
+  // text/bookmark_cancel_sent.tmpl
+  "is removed from your bookmarks": "",
+
+  // text/bookmark_sent.tmpl
+  "is added to your bookmarks": "",
+
+  // text/comment_del_denied.tmpl
+  "You cannot delete %s": "",
+
+  // text/comment_del.tmpl
+  "Comment #%s/%s is deleted": "",
+
+  // text/comment_not_found.tmpl
+  "Comment #%s/%s does not exist": "",
+
+  // text/comment.tmpl
+  "in response to": "",
+
+  // text/confirm_code.tmpl
+
+  // text/im_offline.tmpl
+  "Message delivery is now disabled": "",
+
+  // text/im_online.tmpl
+  "Message delivery is now enabled": "",
+
+  // text/msg_comment_edited.tmpl
+  "%s has edited %s": "",
+
+  // text/msg_comment_sent.tmpl
+  "Comment %s is added.": "",
+
+  // text/msg_comment.tmpl
+
+  // text/msg_post_edited.tmpl
+  "%s has edited %s:": "",
+
+  // text/msg_post_sent.tmpl
+  "Private post %s is sent": "",
+
+  // text/msg_post.tmpl
+  "Private post from": "",
+
+  // text/msg_post_upd.tmpl
+
+  // text/msg_rec.tmpl
+  "%s recommends:": "",
+  "Comments: %d": "",
+
+  // text/nothing_to_del.tmpl
+  "Nothing to delete": "",
+
+  // text/nothing_to_edit.tmpl
+  "Nothing to edit": "",
+
+  // text/passwd_changed.tmpl
+  "Your password is successfully changed": "",
+
+  // text/passwd_enter_current.tmpl
+  "Enter your current password": "",
+
+  // text/passwd_enter_new.tmpl
+  "Enter your *new* password": "",
+
+  // text/passwd_wrong.tmpl
+  "Sorry, wrong current password": "",
+
+  // text/password.tmpl
+  "Encrypted password cannot be displayed": "",
+
+  // text/post_already_pinned.tmpl
+  "Post %s is already pinned": "",
+
+  // text/post_bookmark_denied.tmpl
+  "You cannot add %s to bookmarks.": "",
+
+  // text/post_commented_err.tmpl
+  "Post %s is already commented.": "",
+
+  // text/post_del_denied.tmpl
+  "You cannot delete %s.": "",
+
+  // text/post_del.tmpl
+  "Post #%s is deleted": "",
+
+  // text/post_denied.tmpl
+  "Access to %s is denied.": "",
+
+  // text/post_diff_err.tmpl
+  "Too many differencies in %s.": "",
+
+  // text/post_inadmissible.tmpl
+  "Inadmissible post": "",
+
+  // text/post_interval_exceeded.tmpl
+  "Too short period of time between actions": "",
+
+  // text/post_not_found.tmpl
+  "Post %s does not exist": "",
+
+  // text/post_not_pinned.tmpl
+  "Post %s is not pinned": "",
+
+  // text/post_not_subscribed.tmpl
+  "You were not subscribed to %s.": "",
+
+  // text/post_pinned.tmpl
+  "Post %s is pinned": "",
+
+  // text/post_readonly.tmpl
+  "Post %s is readonly.": "",
+
+  // text/post_recommend_denied.tmpl
+  "You cannot recommend %s.": "",
+
+  // text/posts.tmpl
+  "Posts: %d": "",
+  "No posts yet": "",
+
+  // text/post_sub_already.tmpl
+  "You are already subscribed to %s.": "",
+
+  // text/post_sub_ok.tmpl
+  "You are subscribed to %s.": "",
+
+  // text/post.tmpl
+  "Recommended by": "",
+  "and": "",
+  "No comments yet": "",
+
+  // text/post_unpinned.tmpl
+  "Post %s has been unpinned": "",
+
+  // text/post_unsub_ok.tmpl
+  "You have sucessfully unsubscribed from %s.": "",
+
+  // text/post_upd_err.tmpl
+  "Cannot update %s.": "",
+
+  // text/post_upd.tmpl
+  "Post %s is updated.": "",
+
+  // text/profile_ok.tmpl
+  "Profile updated successfully": "",
+
+  // text/profile_param_err.tmpl
+  "Unknown parameter: %s": "",
+
+  // text/profile_value_err.tmpl
+  "Incorrect value: %s": "",
+
+  // text/rcpt_add_already.tmpl
+  "These users are already invited into %s.": "",
+
+  // text/rcpt_add.tmpl
+  "are invited into %s": "",
+  "is invited into %s": "",
+
+  // text/rcpt_del.tmpl
+  "are removed from %s": "",
+  "is removed from %s": "",
+
+  // text/rec_ok.tmpl
+  "%s recommended your comment %s": "",
+  "%s recommended your post %s": "",
+
+  // text/recommendation_cancel_sent.tmpl
+  "Recommendation cancelled": "",
+
+  // text/recommendation_sent.tmpl
+  "Recommended": "",
+
+  // text/reg_already.tmpl
+  "You are already authorized as %s": "",
+
+  // text/reg_invalid.tmpl
+  "Nickname may contain letters, numbers and minus sign ("-") and must be between 2 and 32 chararacters.": "",
+
+  // text/reg_ok.tmpl
+
+  // text/remember.tmpl
+
+  // text/search_results.tmpl
+
+  // text/search.tmpl
+
+  // text/sub_already.tmpl
+  "You are already subscribed to %s": "",
+
+  // text/sub_denied.tmpl
+  "You cannot subscribe to %s": "",
+
+  // text/sub_not.tmpl
+  "You were not subscribed to %s": "",
+
+  // text/sub_ok.tmpl
+  "Successfully subscribed to %s": "",
+
+  // text/sub_rec_already.tmpl
+  "You are already subscribed to %s\'s recommendations": "",
+
+  // text/sub_rec_not.tmpl
+  "You were not subscribed to %s\'s recommendations": "",
+
+  // text/sub_rec_ok.tmpl
+  "Successfully subscribed to %s\'s recommendations": "",
+
+  // text/sub_rename.tmpl
+
+  // text/sub_req_already.tmpl
+  "Subscription request was already sent to %s": "",
+
+  // text/sub_req_sent.tmpl
+  "Subscription request is sent to %s": "",
+
+  // text/sub_req.tmpl
+  "%s has requested a subscription to your blog": "",
+
+  // text/subscriptions.tmpl
+  "You are subscribed to:": "",
+  "Your readers:": "",
+  "Incoming subscription requests:": "",
+  "Outgoing subscription requests:": "",
+  "Tags:": "",
+  "You are not subscribed to anyone yet.": "",
+
+  // text/sub_sub.tmpl
+  "%s has subscribed to your blog": "",
+
+  // text/sub_unsub_error.tmpl
+  "It\'s impossible to unsubscribe from yourself, %s": "",
+
+  // text/sub_unsub_ok.tmpl
+  "Successfully unsubscribed from %s": "",
+
+  // text/sub_unsub_rec_error.tmpl
+  "You cannot perform this action for your blog, %s": "",
+
+  // text/sub_unsub_rec_ok.tmpl
+  "You have successfully unsubscribed from %s\'s recommendations": "",
+
+  // text/sub_wl.tmpl
+  "%s has added you to his white list": "",
+
+  // text/tags_sub_ok.tmpl
+  "You are subscribed to %s\'s tags": "",
+  "You are subscribed to tags": "",
+
+  // text/tags_unsub_ok.tmpl
+  "You are unsubscribed from %s\'s tags": "",
+  "You are unsubscribed from tags": "",
+
+  // text/user_denied.tmpl
+  "You cannot view @%s\'s info": "",
+
+  // text/user_info.tmpl
+
+  // text/user_not_authorized.tmpl
+  "You are not authorized": "",
+
+  // text/user_not_found.tmpl
+  "User %s does not exist": "",
+
+  // text/user_post_denied.tmpl
+  "You cannot write to %s": "",
+
+  // text/whitelist.tmpl
+  "Your white list": "",
+  "Your white list is empty": "",
+
+  // text/wl_updated.tmpl
+  "Whitelist has been updated": "",
+
+  // xhtml/_comment_menu.tmpl
+  "Unsubscribe": "",
+  "Recommend": "",
+  "Add to bookmarks": "",
+  "Last 10 comments": "",
+  "All comments": "",
+
+  // xhtml/_post_menu.tmpl
+  "Subscribe": "",
+  "Bookmark": ""
+}

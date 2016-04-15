@@ -1,0 +1,9 @@
+{% if private %}{{ _('Private post from') }} {% endif %}@{{author}}:
+{% if tags %}{% for t in tags %} *{{ t }}{% endfor %}{% endif %}
+{% if title %}{% if author_name %}{{author_name}}
+{% endif %}**{{title}}**{% endif %}
+{{text|safe}}
+{% if link %}{{link}}
+{% endif %}
+{% if files %}{% for f in files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}

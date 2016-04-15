@@ -1,0 +1,7 @@
+@{{author}}{% if to_comment_id %} {{ _('in response to') }} #{{post_id}}/{{to_comment_id}}{% endif %}:
+{% if to_text %}{% if to_text|count > 128 %}{{to_text[:125]|xquote|safe}}...{% else %}{{to_text|xquote|safe}}{% endif %}
+
+{% endif %}{{text|safe}}
+{% if files %}{% for f in files %}
+http{{settings.media_root}}/{{f}}">{{f|basename}}
+{% endfor %}{% endif %}

@@ -1,0 +1,12 @@
+{% set _post = '<a href="xmpp:%(jid)s?message;type=chat;body=%%23%(post_id)s%%20" style="color:#448844; font-weight:bold; text-decoration:none;">#%(post_id)s</a>'|format(jid=settings.xmpp_jid, post_id=post_id) %}
+<p>
+{% if private %}
+{{ _('Private post %s is sent')|format(_post)|safe }}
+{% else %}
+{{ _('Post %s is sent')|format(_post)|safe }}
+{% endif %}
+</p>
+<a href="xmpp:{{settings.xmpp_jid}}?message;type=chat;body=%23{{post_id}}+%20" style="color:#448844; font-weight:bold; text-decoration:none;" title="{{ _('Last 10 comments') }}">[+]</a>
+<a href="xmpp:{{settings.xmpp_jid}}?message;type=chat;body=%23{{post_id}}++%20" style="color:#448844; font-weight:bold; text-decoration:none;" title="{{ _('All comments') }}">[++]</a>
+<a href="xmpp:{{settings.xmpp_jid}}?message;type=chat;body=D%20%23{{post_id}}" style="color:#448844; font-weight:bold; text-decoration:none;" title="{{ _('Delete') }}">[D]</a>
+<a href="https://{{settings.domain}}/{{post_id}}">https://{{settings.domain}}/{{post_id}}</a>

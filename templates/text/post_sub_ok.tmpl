@@ -1,0 +1,3 @@
+{% set _post = '#%s'|format(post_id) %}
+{{ _('You are subscribed to %s.')|format(_post) }}
+{% if comments > 0 %}{{ _('Comments: %d')|format(comments) }}{% endif %}

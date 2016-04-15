@@ -1,0 +1,7 @@
+{% set _user = '@%s'|format(author) %}
+{% set _post = '#%s'|format(post_id) %}
+{{ _('%s has updated %s)|format(_user, _post) }}:
+{% if tags %}{% for t in tags %} *{{ t }}{% endfor %}
+{% endif %}
+{{text|safe}}
+#{{post_id}} https://{{settings.domain}}/{{post_id}}

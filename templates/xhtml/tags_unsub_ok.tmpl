@@ -1,0 +1,5 @@
+{% set _user = '<a href="xmpp:%(jid)s?message;type=chat;body=@%(login)s%%20" style="color:#4488ff; font-weight:bold; text-decoration:none;">@%(login)s</a>'|format(jid=settings.xmpp_jid, login=login) %}
+{% if login %}{{ _('You are unsubscribed from %s\'s tags')|format(_user)|safe }}{% else %}{{ _('You are unsubscribed from tags') }}: 
+{% for t in tags %}
+  <span style="color: #808080">*{{ t }}</span> 
+{% endfor %}

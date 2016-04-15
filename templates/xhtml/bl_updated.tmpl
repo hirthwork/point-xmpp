@@ -1,0 +1,8 @@
+{{ _('Blacklist has been updated') }}.<br/>
+{% if added %}
+<b>{{ _('Added') }}</b>: {{ added|map('login', True)|join(", ")|safe }}.<br/>{% endif %}{% if already %}
+<b>{{ _('Already in list') }}</b>: {{ already|map('login', True)|join(", ")|safe }}.<br/>{% endif %}{% if denied %}
+<b>{{ _('Cannot add') }}</b>: {{ denied|map('login', True)|join(", ")|safe }}.<br/>{% endif %}{% if deleted %}
+<b>{{ _('Deleted') }}</b>: {{ deleted|map('login', True)|join(", ")|safe }}.<br/>{% endif %}{% if not_deleted %}
+<b>{{ _('Not in list') }}</b>: {{ not_deleted|map('login', True)|join(", ")|safe }}.<br/>{% endif %}{% if not_found %}
+<b>{{ _('Not found') }}</b>: {{ not_found|map('login', True)|join(", ")|safe }}.{% endif %}

@@ -1,0 +1,8 @@
+{% set _user = '@%s'|format(author) %}
+{% set _post = '#%s'|format(post_id) %}
+{% set _comment = '#%s/%s'|format(post_id, comment_id) %}
+{% if comment_id %}{{ _('%s recommended your comment %s')|format(_user, _comment) }}{% else %}{{ _('%s recommended your post %s')|format(_user, _post) }}{% endif %}{% if text %}: {{text|safe}} 
+(#{{post_id}}/{{rcid}} https://{{settings.domain}}/{{post_id}}#{{rcid}})
+{% else %}
+{% if comment_id %}https://{{settings.domain}}/{{post_id}}#{{comment_id}}
+{% else %}https://{{settings.domain}}/{{post_id}}{% endif %}{% endif %}
