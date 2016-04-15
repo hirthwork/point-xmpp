@@ -1,0 +1,333 @@
+{
+  // text/account_add_fail.tmpl
+  "This address is already in use": "Этот адрес уже используется другим пользователем",
+
+  // text/account_add.tmpl
+  "Confirmation info has been sent to the specified address": "На указанный адрес отправлена инструкция для подтверждения",
+
+  // text/account_confirmed.tmpl
+  "The address is successfully confirmed": "Адрес подтверждён",
+
+  // text/account_confirm_fail.tmpl
+  "Wrong confirmation code": "Неверный код подтверждения",
+
+  // text/account_del.tmpl
+  "The address was successfully removed": "Адрес успешно удалён",
+
+  // text/accounts.tmpl
+  "Your IM accounts": "Ваши мессенджеры",
+  "Your e-mails": "Ваши e-mail",
+  "Your %s accounts": "Ваши %s-аккаунты",
+  "Delete": "Удалить",
+  "active": "активный",
+  "no accounts added yet": "ещё ни одного аккаунта не добавлено",
+  "Unconfirmed": "Неподтверждённые",
+
+  // text/alias_del_fail.tmpl
+
+  // text/alias_del.tmpl
+  "Alias \"%s\" sucessfully deleted": "Алиас %s удалён",
+
+  // text/alias_list.tmpl
+  "User aliases": "Пользовательские алиасы",
+  "Global aliases": "Глобальные алиасы",
+
+  // text/alias_set.tmpl
+  "Alias \"%s\" is set to \"%s\"": "Алиасу \"%s\" присвоено значение \"%s\"",
+
+  // text/blacklist.tmpl
+  "Your blacklist": "Ваш чёрный список",
+  "Tags": "Теги",
+  "Your blacklist is empty": "Ваш чёрный список пуст",
+
+  // text/blacklist_updated.tmpl
+  "Blacklist is updated": "Чёрный список обновлён",
+
+  // text/bl_updated.tmpl
+  "Blacklist has been updated": "Чёрный список обновлён",
+  "Added": "Добавлено",
+  "Already in list": "Уже в списке",
+  "Cannot add": "Невозможно добавить",
+  "Deleted": "Удалено",
+  "Not in list": "Не в списке",
+  "Not found": "Не найдено",
+
+  // text/bookmark_cancel_sent.tmpl
+  "is removed from your bookmarks": "удалён из закладок",
+
+  // text/bookmark_sent.tmpl
+  "is added to your bookmarks": "добавлен в закладки",
+
+  // text/comment_del_denied.tmpl
+  "You cannot delete %s": "Вы не можете удалить %s",
+
+  // text/comment_del.tmpl
+  "Comment #%s/%s is deleted": "Комментарий %s удалён",
+
+  // text/comment_not_found.tmpl
+  "Comment #%s/%s does not exist": "Комментарий %s не найден",
+
+  // text/comment.tmpl
+  "in response to": "в ответ на",
+
+  // text/confirm_code.tmpl
+
+  // text/im_offline.tmpl
+  "Message delivery is now disabled": "Доставка сообщений отключена",
+
+  // text/im_online.tmpl
+  "Message delivery is now enabled": "Доставка сообщений включена",
+
+  // text/msg_comment_edited.tmpl
+  "%s has edited %s": "%s изменил %s",
+
+  // text/msg_comment_sent.tmpl
+  "Comment %s is added.": "Комментарий %s добавлен",
+
+  // text/msg_post_sent.tmpl
+  "Post %s is sent": "Пост %s отправлен",
+  "Private post %s is sent": "Приватный пост %s отправлен",
+
+  // text/msg_post.tmpl
+  "Private post from": "Приватный пост от",
+
+  // text/msg_post_upd.tmpl
+
+  // text/msg_rec.tmpl
+  "%s recommends:": "%s рекомендует:",
+  "Comments: %d": "Комментариев: %s",
+
+  // text/nothing_to_del.tmpl
+  "Nothing to delete": "Нечего удалять",
+
+  // text/nothing_to_edit.tmpl
+  "Nothing to edit": "Нечего редактировать",
+
+  // text/passwd_changed.tmpl
+  "Your password is successfully changed": "Пароль успешно изменён",
+
+  // text/passwd_enter_current.tmpl
+  "Enter your current password": "ВВедите текущий пароль",
+
+  // text/passwd_enter_new.tmpl
+  "Enter your new password": "Введите новый пароль",
+
+  // text/passwd_wrong.tmpl
+  "Sorry, wrong current password": "Извините, неверный текущий пароль",
+
+  // text/password.tmpl
+  "Encrypted password cannot be displayed": "Пароль зашифрован и не может быть отображён",
+
+  // text/post_already_pinned.tmpl
+  "Post %s is already pinned": "Пост %s уже закреплён",
+
+  // text/post_bookmark_denied.tmpl
+  "You cannot add %s to bookmarks.": "Вы не можете добавить %s в закладки",
+
+  // text/post_commented_err.tmpl
+  "Post %s is already commented.": "У поста %s уже есть комментарии",
+
+  // text/post_del_denied.tmpl
+  "You cannot delete %s.": "Вы не можете удалить %s",
+
+  // text/post_del.tmpl
+  "Post #%s is deleted": "Пост %s удалён",
+
+  // text/post_denied.tmpl
+  "Access to %s is denied.": "Доступ к %s закрыт",
+
+  // text/post_diff_err.tmpl
+  "Too many differencies in %s": "Слишком много изменений в %s",
+
+  // text/post_inadmissible.tmpl
+  "Inadmissible post": "Недопустимый пост",
+
+  // text/post_interval_exceeded.tmpl
+  "Too short period of time between actions": "Слишком короткий промежуток времени между действиями",
+
+  // text/post_not_found.tmpl
+  "Post %s does not exist": "Пост %s не найден",
+
+  // text/post_not_pinned.tmpl
+  "Post %s is not pinned": "Пост %s не закреплён",
+
+  // text/post_not_subscribed.tmpl
+  "You were not subscribed to %s.": "Вы не были подписаны на %s",
+
+  // text/post_pinned.tmpl
+  "Post %s is pinned": "Пост %s закреплён",
+
+  // text/post_readonly.tmpl
+  "Post %s is readonly.": "Пост %s только для чтения",
+
+  // text/post_recommend_denied.tmpl
+  "You cannot recommend %s.": "Вы не можете рекомендовать %s",
+
+  // text/posts.tmpl
+  "Posts: %d": "Постов: %d",
+  "No posts yet": "Пока нет постов",
+
+  // text/post_sub_already.tmpl
+  "You are already subscribed to %s.": "Вы уже подписаны на %s",
+
+  // text/post_sub_ok.tmpl
+  "You are subscribed to %s.": "Вы подписаны на %s",
+
+  // text/post.tmpl
+  "Recommended by": "Рекомендовано",
+  "and": "и",
+  "No comments yet": "Пока нет комментариев",
+
+  // text/post_unpinned.tmpl
+  "Post %s has been unpinned": "Пост %s откреплён",
+
+  // text/post_unsub_ok.tmpl
+  "You have sucessfully unsubscribed from %s.": "Вы отписались от %s",
+
+  // text/post_upd_err.tmpl
+  "Cannot update %s.": "Невозможно обновить %s",
+
+  // text/post_upd.tmpl
+  "Post %s is updated.": "Пост %s обновлён",
+
+  // text/profile_ok.tmpl
+  "Profile updated successfully": "Профиль обновлён",
+
+  // text/profile_param_err.tmpl
+  "Unknown parameter: %s": "Неизвестный параметр: %s",
+
+  // text/profile_value_err.tmpl
+  "Incorrect value: %s": "Недопустимое значение: %s",
+
+  // text/rcpt_add_already.tmpl
+  "These users are already invited into %s": "Эти пользователи уже приглашены в %s",
+
+  // text/rcpt_add.tmpl
+  "are invited into %s": "приглашены в %s",
+  "is invited into %s": "приглашён в %s",
+
+  // text/rcpt_del.tmpl
+  "are removed from %s": "удалены из %s",
+  "is removed from %s": "удалён из %s",
+
+  // text/rec_ok.tmpl
+  "%s recommended your comment %s": "%s порекомендовал ваш комментарий %s",
+  "%s recommended your post %s": "%s порекомендовал ваш  пост %s",
+
+  // text/recommendation_cancel_sent.tmpl
+  "Recommendation cancelled": "Рекомендация отменена",
+
+  // text/recommendation_sent.tmpl
+  "Recommended": "Рекомендовано",
+
+  // text/reg_already.tmpl
+  "You are already authorized as %s": "Вы уже авторизованы как %s",
+
+  // text/reg_invalid.tmpl
+  "Nickname may contain letters, numbers and minus sign (\"-\") and must be between 2 and 32 chararacters.": "Никнейм может содержать латинские буквы, цифры и минус (\"-\"), и его длина должна быть не меньше 2 и не больше 16 знаков.",
+
+  // text/reg_ok.tmpl
+
+  // text/remember.tmpl
+
+  // text/search_results.tmpl
+
+  // text/search.tmpl
+
+  // text/sub_already.tmpl
+  "You are already subscribed to %s": "Вы уже подписаны на %s",
+
+  // text/sub_denied.tmpl
+  "You cannot subscribe to %s": "Вы не можете подписаться на %s",
+
+  // text/sub_not.tmpl
+  "You were not subscribed to %s": "Вы не были подписаны на %s",
+
+  // text/sub_ok.tmpl
+  "Successfully subscribed to %s": "Вы успешно подписались на %s",
+
+  // text/sub_rec_already.tmpl
+  "You are already subscribed to %s's recommendations": "Вы уже подписаны на рекомендации %s",
+
+  // text/sub_rec_not.tmpl
+  "You were not subscribed to %s's recommendations": "Вы не были подписаны на рекомендации %s",
+
+  // text/sub_rec_ok.tmpl
+  "Successfully subscribed to %s's recommendations": "Вы успешно подписались на рекомендации %s",
+
+  // text/sub_rename.tmpl
+
+  // text/sub_req_already.tmpl
+  "Subscription request was already sent to %s": "Вы уже отправляли %s запрос на подписку",
+
+  // text/sub_req_sent.tmpl
+  "Subscription request is sent to %s": "Запрос на подписку отправлен %s",
+
+  // text/sub_req.tmpl
+  "%s has requested a subscription to your blog": "%s запросил подписку на Ваш блог",
+
+  // text/subscriptions.tmpl
+  "You are subscribed to:": "Вы подписаны на:",
+  "Your readers:": "На вас подписаны:",
+  "Incoming subscription requests:": "Запросы на подписку:",
+  "Outgoing subscription requests:": "Запросы на подписку от вас:",
+  "Tags:": "Теги:",
+  "You are not subscribed to anyone yet.": "Вы ещё ни на кого не подписаны",
+
+  // text/sub_sub.tmpl
+  "%s has subscribed to your blog": "%s подписался на Ваш блог",
+
+  // text/sub_unsub_error.tmpl
+  "It's impossible to unsubscribe from yourself, %s": "Невозможно отписаться от себя самого, %s",
+
+  // text/sub_unsub_ok.tmpl
+  "Successfully unsubscribed from %s": "Вы отписались от %s",
+
+  // text/sub_unsub_rec_error.tmpl
+  "You cannot perform this action for your blog, %s": "Вы не можете выполнить это действие для своего блога, %s",
+
+  // text/sub_unsub_rec_ok.tmpl
+  "You have successfully unsubscribed from %s's recommendations": "Вы успешно отписались от рекомендаций %s",
+
+  // text/sub_wl.tmpl
+  "%s has added you to his white list": "%s добавил Вас в белый список",
+
+  // text/tags_sub_ok.tmpl
+  "You are subscribed to %s's tags": "Вы подписались на теги %s",
+  "You are subscribed to tags": "Вы подписались на теги",
+
+  // text/tags_unsub_ok.tmpl
+  "You are unsubscribed from %s's tags": "Вы отписались от тегов %s",
+  "You are unsubscribed from tags": "Вы отписались от тегов",
+
+  // text/user_denied.tmpl
+  "You cannot view @%s's info": "Вы не можете посмотреть профиль %s",
+
+  // text/user_info.tmpl
+
+  // text/user_not_authorized.tmpl
+  "You are not authorized": "Вы не авторизованы",
+
+  // text/user_not_found.tmpl
+  "User %s does not exist": "Пользователь %s не найден",
+
+  // text/user_post_denied.tmpl
+  "You cannot write to %s": "Вы не можете писать %s",
+
+  // text/whitelist.tmpl
+  "Your white list": "Ваш белый список",
+  "Your white list is empty": "Ваш белый список пуст",
+
+  // text/wl_updated.tmpl
+  "Whitelist has been updated": "Белый список обновлён",
+
+  // xhtml/_comment_menu.tmpl
+  "Unsubscribe": "Отписаться",
+  "Recommend": "Рекомендовать",
+  "Add to bookmarks": "Добавить в закладки",
+  "Last 10 comments": "Последние 10 комментариев",
+  "All comments": "Все комментарии",
+
+  // xhtml/_post_menu.tmpl
+  "Subscribe": "Подписаться"
+}
