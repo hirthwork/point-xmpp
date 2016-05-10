@@ -4,6 +4,7 @@ import sys
 #sys.path.append(settings.core_path)
 
 import os
+import re
 
 from gevent import monkey; monkey.patch_all()
 from gevent import spawn, spawn_later
@@ -19,6 +20,13 @@ from pprint import pprint
 
 #register_stanza_plugin(Message, RequestPlugin)
 
+TAG_NAME_RE = re.compile(r'(?:\{.+\})?(?P<name>.+)$')
+
+def tag_name_without_ns(element):
+    match = TAG_NAME_RE.match(element.tag)
+    return match.group('name')
+
+
 class XMPPBot(sleekxmpp.ClientXMPP):
     def __init__(self):
         proctitle('bot')
@@ -28,10 +36,15 @@ class XMPPBot(sleekxmpp.ClientXMPP):
         sleekxmpp.ClientXMPP.__init__(self, self._jid, settings.xmpp_password)
 
         self.register_plugin('xep_0184')
+        self.register_plugin('xep_0163')
+        self.plugin['xep_0163'].add_interest('http://jabber.org/protocol/tune')
+        self.plugin['xep_0060'].map_node_event('http://jabber.org/protocol/tune', 'user_tune')
 
         self.add_event_handler("session_start", self.session_start)
         self.add_event_handler("message", self.handle_message)
         self.add_event_handler("presence_subscribed", self.handle_subscription)
+        self.add_event_handler("user_tune_publish", self.handle_tune)
+        self.add_event_handler("got_offline", self.handle_disconnection)
 
         self.add_event_handler("receipt_received", self.handle_receipt)
 
@@ -78,6 +91,18 @@ class XMPPBot(sleekxmpp.ClientXMPP):
             self.xin.push(json.dumps({'from': str(msg['from']),
                                       'resource': resource,
                                       'body': msg['body'].strip()}))
+
+    def handle_tune(self, msg):
+        tune = msg['pubsub_event']['items']['item']['payload']
+        tune_data = { tag_name_without_ns(el):el.text for el in tune.getchildren() }
+        self.xin.push(json.dumps({'type': 'tune', 'from': str(msg['from']), 'tune': tune_data}))
+
+    def handle_disconnection(self, presence):
+        try:
+            jid, resource = str(presence['from']).split('/', 1)
+        except ValueError:
+            jid = str(presence['from'])
+        self.xin.push(json.dumps({'type': 'tune', 'from': jid, 'tune': {}}))
 
     def listen_queue(self):
         try:

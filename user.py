@@ -120,6 +120,13 @@ class ImUser(User):
 
         return message
 
+    def update_tune_data(self, data):
+        cache_key = 'user_tune:%s' % self.id
+        if data:
+            cache_store(cache_key, data)
+        else:
+            cache_del(cache_key)
+
 
 class SessionCallError(Exception):
     pass

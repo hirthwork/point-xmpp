@@ -54,7 +54,12 @@ class XMPPWorker(object):
             if data:
                 try:
                     data = json.loads(data)
-                    gevent.spawn(self.handle_message, data)
+                    data_type = data.get('type', 'msg')
+                    if data_type == 'msg':
+                        method = self.handle_message
+                    elif data_type == 'tune':
+                        method = self.handle_tune
+                    gevent.spawn(method, data)
                 except ValueError, err:
                     log.error("%s: %s" % (err.__class__.__name__, err.message))
             #else:
@@ -157,7 +162,9 @@ class XMPPWorker(object):
         self.qout.push(json.dumps(out))
         return
 
-
+    def handle_tune(self, data):
+        user = ImUser('xmpp', data['from'])
+        user.update_tune_data(data['tune'])
 
 if __name__ == '__main__':
     XMPPWorker()
