@@ -1,8 +1,11 @@
 {% for p in posts %}
 {% if p.rec and p.rec.text %}@{{p.rec.author.login}}: {{p.rec.text}}
 {% endif %}{% if p.private %}[асабісты]{% endif %}@{{p.post.author.login}} {% for t in p.post.tags %}*{{ t }} {% endfor %}
-{{p.post.text}}
-Каментарыяў: {{p.post.comments_count()}}
+{% if p.post.title %}[{{p.post.title}}]
+{% endif %}{% if p.post.text %}{{p.post.text|safe}}
+{% endif %}{% if p.post.link %}{{p.post.link}}
+{% endif %}{% if p.post.files %}{% for f in p.post.files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}Каментарыяў: {{p.post.comments_count()}}
 #{{p.post.id}} https://{{settings.domain}}/{{p.post.id}}
 {% else %}{% if posts_count %}Допісаў: {{posts_count}}{% else %}Допісы адсутнічаюць{% endif %}
 {% endfor %}

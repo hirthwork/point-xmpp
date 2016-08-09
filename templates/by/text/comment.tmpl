@@ -1,5 +1,4 @@
 @{{author}}:
-{{text|safe}}{% if files %}
-{% for f in files %}http{{settings.media_root}}/{{f}}
-{% endfor %}{% endif %}
-#{{post_id}}/{{comment_id}} https://{{settings.domain}}/{{post_id}}#{{comment_id}}{% if to_comment_id %} у адказ на /{{to_comment_id}}{% endif %}
+{% if text %}{{text|safe}}
+{% endif %}{% if files %}{% for f in files %}http{{settings.media_root}}/{{f}}
+{% endfor %}{% endif %}#{{post_id}}/{{comment_id}} https://{{settings.domain}}/{{post_id}}#{{comment_id}}{% if to_comment_id %} у адказ на /{{to_comment_id}}{% endif %}
