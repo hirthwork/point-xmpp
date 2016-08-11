@@ -1,11 +1,8 @@
+{% import 'text_common.tmpl' as common -%}
 {% for p in posts %}
 {% if p.rec and p.rec.text %}@{{p.rec.author.login}}: {{p.rec.text}}
-{% endif %}{% if p.private %}[приватный]{% endif %}@{{p.post.author.login}} {% for t in p.post.tags %}*{{ t }} {% endfor %}
-{% if p.post.title %}[{{p.post.title}}]
-{% endif %}{% if p.post.text %}{{p.post.text|safe}}
-{% endif %}{% if p.post.link %}{{p.post.link}}
-{% endif %}{% if p.post.files %}{% for f in p.post.files %}http{{settings.media_root}}/{{f}}
-{% endfor %}{% endif %}Комментариев: {{p.post.comments_count()}}
+{% endif %}{% if p.private %}[приватный]{% endif %}{{common.post(p.post.author.login, p.post.tags, p.post.title, p.post.text, p.post.link, p.post.files, settings)-}}
+Комментариев: {{p.post.comments_count()}}
 #{{p.post.id}} https://{{settings.domain}}/{{p.post.id}}
 {% else %}{% if posts_count %}Постов: {{posts_count}}{% else %}Нет постов{% endif %}
 {% endfor %}
